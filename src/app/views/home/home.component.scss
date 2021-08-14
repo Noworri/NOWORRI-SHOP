@@ -1,0 +1,344 @@
+#container {
+    header {
+        .avatar {
+            display: flex;
+            justify-content: center;
+            margin-top: 17px;
+            img {
+                width: 100px;
+
+                height: 100px;
+                border-radius: 100px;
+                object-fit: contain;
+            }
+        }
+        .title-description {
+            .title {
+                h1 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 2.3;
+                    text-align: center;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                        "Open Sans", "Helvetica Neue", sans-serif;
+                    color: #fff;
+                }
+            }
+            .description {
+                margin-top: -13px;
+                margin-bottom: 16px;
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+                font-weight: 400;
+                line-height: 1.5;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                    "Open Sans", "Helvetica Neue", sans-serif;
+            }
+        }
+    }
+    .cc {
+        display: flex;
+        justify-content: center;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 4px;
+        button {
+            background: #b973a6;
+            color: #fff;
+            width: 7rem;
+            height: 3rem;
+            font-size: 23px;
+            border-color: #b973a6;
+            border-radius: 12px;
+        }
+    }
+
+    #card-section {
+        display: flex;
+        justify-content: center;
+        .gene-card {
+            margin-top: 10px;
+            background-color: transparent;
+            border: none;
+            max-width: 100%;
+        }
+        .list-group {
+            position: relative;
+            top: 20px;
+            .list-group-item {
+                background-color: #343b76;
+                border: none;
+                box-shadow: none;
+                .card {
+                    max-width: 25rem !important;
+                    border-radius: 6px;
+
+                    img {
+                        //    height: 20px;
+                    }
+                    .card-body {
+                        margin-top: -25px;
+                    }
+                    .card-title {
+                        font-size: 20px;
+                        text-align: left;
+                        line-height: 1.4;
+                        margin-top: 30px;
+                        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+                            "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                            "Segoe UI Symbol";
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .general-card {
+            position: relative;
+            display: flex;
+            margin-top: -20px;
+        }
+
+        .card-footer1 {
+            display: flex;
+
+            .btn-secon1 {
+                margin-top: 4px;
+                display: flex;
+                justify-content: center;
+                border-radius: 350px;
+                height: 40px;
+                background-color: #f31853;
+                border: none;
+                position: relative;
+                left: 10px;
+
+                i {
+                    color: white;
+                }
+            }
+            .btn-secon2 {
+                margin-top: 4px;
+                border-radius: 350px;
+                height: 40px;
+                background-color: #497dd5;
+                border: none;
+                position: relative;
+                left: 2rem;
+                i {
+                    color: white;
+                }
+            }
+            .article-number {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 20px;
+                position: relative;
+                left: 20px;
+                font-weight: bold;
+                color: #019877;
+            }
+        }
+        .card-footer {
+            background-color: white;
+            border: none;
+        }
+
+        .card-footer2 {
+            color: white;
+            background-color: #019877;
+            width: 200px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 15px;
+            font-weight: 600;
+        }
+    }
+    .embed-responsive {
+        margin-left: -1px;
+        margin-top: -1px;
+        iframe {
+            height: 18rem;
+        }
+    }
+    footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+// responssive
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 323px) and (max-width: 350.98px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 140px;
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+    .card-footer1 {
+       display: flex;
+       position: relative;
+       top: -50px;
+    }
+    .purchase {
+        position: relative;
+        top: 35px;
+    }
+   
+}
+@media (min-width: 350.98px) and (max-width: 360.98px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 170px;
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+    .card-footer1 {
+        display: flex;
+        position: relative;
+        top: -50px;
+     }
+     .purchase {
+         position: relative;
+         top: 35px;
+     }
+}
+@media (min-width: 360.98px) and (max-width: 400.98px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 170px;
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+    .card-footer1 {
+        display: flex;
+        position: relative;
+        top: -50px;
+     }
+     .purchase {
+         position: relative;
+         top: 35px;
+     }
+}
+@media (min-width: 400px) and (max-width: 457.98px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 200px;
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+
+    .card-footer1 {
+        display: flex;
+        position: relative;
+        top: -50px;
+     }
+     .purchase {
+         position: relative;
+         top: 35px;
+     }
+}
+@media (min-width: 457px) and (max-width: 1200px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 266px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+    
+}
+@media (min-width: 1200px) {
+    #price {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        span {
+            background-color: #4cd964;
+            position: absolute;
+            width: 120px;
+            z-index: 4;
+            text-align: center;
+
+            left: 266px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    }
+}

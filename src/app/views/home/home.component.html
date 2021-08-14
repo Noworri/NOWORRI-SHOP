@@ -1,0 +1,180 @@
+<div class="container" id="container">
+
+
+    <header>
+        <div class="avatar">
+            <img src="https://cdn.filestackcontent.com/4tRqtYUNTKmfkzvhAQYh" class="avatar" alt=""
+                title="Kiramart Shop">
+        </div>
+        <div class="title-description">
+            <h1 class="title">
+                <h1> Kiramart Shop</h1>
+            </h1>
+            <div class="description">
+                <p *ngIf="condition">l sell everything </p>
+            </div>
+        </div>
+    </header>
+    <div class="social-media">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button type="button" class="btn btn-primary"><i class="bi bi-whatsapp"></i></button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-facebook"></i>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="card-section">
+        <div class="text-center card gene-card">
+            <ul class="list-group">
+                <li class="list-group-item  animate__animated animate__headShake animate__infinite animate__slow 2s ">
+                    <div class="card">
+                        <img src="assets\index1.jpg" alt="">
+                        <div id="price">
+                            <span class="price">{{ productAmount}} GHC</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Buy and sell fast in Ghana and everywherew
+                            </h5>
+                        </div>
+                        <div class="general-card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col get purchase">
+                                        <button class="btn card-footer card-footer2 " type="button">
+                                            PURCHASE NOW
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-footer card-footer1 col-4">
+                                            <div class="col">
+                                                <button (click)='rduceProductAmount()' type="button"
+                                                    class="btn btn-secondary btn-secon1">
+                                                    <i class="bi bi-dash"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="article-number">{{productQuantity}}</h6>
+                                            </div>
+                                            <div class="col">
+                                                <button (click)='cputeProductAmount()' type="button"
+                                                    class="btn btn-secondary btn-secon2">
+                                                    <i class="bi bi-plus-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item animate__animated animate__headShake animate__infinite animate__slow 2s ">
+                    <div class="card">
+                        <img src="assets\john-arano-h4i9G-de7Po-unsplash.jpg" alt="">
+                        <div id="price">
+                            <span class="price">1200.00 GHC</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Buy and sell fast in Ghana and everywherew
+                            </h5>
+                        </div>
+                        <div class="general-card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col purchase">
+                                        <button class="btn card-footer card-footer2 " type="button">
+                                            PURCHASE NOW
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-footer card-footer1 col-4">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-secondary btn-secon1">
+                                                    <i class="bi bi-dash"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="article-number">1</h6>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-secondary btn-secon2">
+                                                    <i class="bi bi-plus-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item animate__animated animate__headShake animate__infinite animate__slow 2s ">
+                    <div class="card">
+                        <div class="embed-responsive ">
+                            <iframe width="100%" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <div id="price">
+                                <span class="price">1200.00 GHC</span>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Buy and sell fast in Ghana and everywherew
+                            </h5>
+                        </div>
+                        <div class="general-card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col purchase">
+                                        <button class="btn card-footer card-footer2 " type="button">
+                                            PURCHASE NOW
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-footer card-footer1 col-4">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-secondary btn-secon1">
+                                                    <i class="bi bi-dash"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="article-number">1</h6>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-secondary btn-secon2">
+                                                    <i class="bi bi-plus-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href=""><span class="shorby-logo">NOWORRI-SHOP</span></a>
+    </footer>
+</div>
