@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  animation = 'headShake';
-  animationState = false;
-  animationWithState = false;
-  hueBtnState = false;
+  // animation = 'headShake';
+  // animationState = false;
+  // animationWithState = false;
+  // hueBtnState = false;
 
 
   productQuantity = 1;
@@ -35,15 +35,6 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  animate() {
-    this.animationState = false;
-    setTimeout(() => {
-      this.animationState = true;
-      this.animationWithState = !this.animationWithState;
-    }, 1);
-  }
-
-
   // We will configure this method as soon as the corresponding data will come from the backend
 
   // setCardAnimation() {
@@ -51,6 +42,16 @@ export class HomeComponent implements OnInit {
   //   element?.classList.add('animate__animated', 'animate__bounce');
 
   // }
+  // animate() {
+  //   this.animationState = false;
+  //   setTimeout(() => {
+  //     this.animationState = true;
+  //     this.animationWithState = !this.animationWithState;
+  //   }, 1);
+  // }
+
+
+  
 
 
 }

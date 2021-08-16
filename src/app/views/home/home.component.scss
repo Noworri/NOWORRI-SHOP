@@ -32,14 +32,13 @@
                 color: #fff;
                 font-weight: 400;
                 line-height: 1.5;
-              
+
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
                     "Open Sans", "Helvetica Neue", sans-serif;
 
-                    p{
-                        text-align: center;
-                       
-                    }
+                p {
+                    text-align: center;
+                }
             }
         }
     }
@@ -82,6 +81,7 @@
                 .card {
                     max-width: 25rem !important;
                     border-radius: 6px;
+                    border-color: #343b76;
 
                     img {
                         //    height: 20px;
@@ -174,29 +174,84 @@
             height: 18rem;
         }
     }
-    
-
-  
 }
 
-#footer{
+#footer {
     position: relative;
     top: 30px;
-    .card{
-        background-color: #EFF1FF;
-      .row{
-          display: flex;
-          .right-side{
-              display: flex;
-              justify-content: end;
-          }
-          img{
-              width: 2rem;
-              margin-left: 8px;
-          }
-      }
+    .card {
+        background-color: #ecf3ff;
+        .row {
+            position: relative;
+            top: 10px;
+            display: flex;
+            .right-side {
+                display: flex;
+                justify-content: end;
+            }
+            .im1 {
+                width: 2rem;
+                margin-left: 8px;
+                border: 1px solid black;
+
+                height: 50px;
+                width: 50px;
+                border-radius: 20px;
+            }
+            .im2 {
+                width: 2rem;
+                margin-left: 8px;
+                border: 1px solid black;
+                border-radius: 20px;
+                height: 50px;
+                width: 50px;
+                margin-left: 24px;
+            }
+        }
     }
-   
+    .content {
+        display: flex;
+        justify-content: start;
+        position: relative;
+        left: -80px;
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+        a {
+            background-color: #019877;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+            left: 40px;
+        }
+
+        h6 {
+            width: 15rem;
+        }
+        .content2 {
+            margin-left: 50px;
+            h6 {
+                font-weight: bold;
+                .nomber {
+                    color: #019877;
+                }
+            }
+            .star {
+                i {
+                    color: rgb(243, 243, 26);
+                    margin-left: 0.6rem;
+                    font-size: medium;
+                }
+            }
+        }
+    }
+    .download-app {
+        font-weight: bold;
+    }
 }
 
 // responssive
@@ -221,15 +276,105 @@
         }
     }
     .card-footer1 {
-       display: flex;
-       position: relative;
-       top: -50px;
+        display: flex;
+        position: relative;
+        top: -50px;
     }
     .purchase {
         position: relative;
         top: 35px;
     }
-   
+    #footer {
+        position: relative;
+        top: 30px;
+        .card {
+            background-color: #ecf3ff;
+
+            .row {
+                position: relative;
+                top: 10px;
+                display: flex;
+                .right-side {
+                    display: flex;
+                    justify-content: end;
+                }
+                .im1 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+                .im2 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 30px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            left: -80px;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            a {
+                background-color: #019877;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                width: 4rem;
+                margin-left: 4px;
+            }
+
+            h6 {
+                width: 15rem;
+            }
+            .content2 {
+                margin-left: 40px;
+                h6 {
+                    font-weight: bold;
+                    font-size: small;
+                    margin-left: 60px;
+                    width: 200px;
+                    .nomber {
+                        color: #019877;
+                    }
+                }
+                .star {
+                    i {
+                        color: rgb(243, 243, 26);
+                        margin-left: 0.6rem;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .download-app {
+            font-weight: bold;
+            font-size: small;
+            text-align: right;
+            color: red;
+            .downlo{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 350.98px) and (max-width: 360.98px) {
     #price {
@@ -254,11 +399,103 @@
         display: flex;
         position: relative;
         top: -50px;
-     }
-     .purchase {
-         position: relative;
-         top: 35px;
-     }
+    }
+    .purchase {
+        position: relative;
+        top: 35px;
+    }
+
+    #footer {
+        position: relative;
+        top: 30px;
+        .card {
+            background-color: #ecf3ff;
+
+            .row {
+                position: relative;
+                top: 10px;
+                display: flex;
+                .right-side {
+                    display: flex;
+                    justify-content: end;
+                }
+                .im1 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+                .im2 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 3px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            left: -80px;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            a {
+                background-color: #019877;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                width: 4rem;
+                margin-left: 4px;
+            }
+
+            h6 {
+                width: 15rem;
+            }
+            .content2 {
+                margin-left: 40px;
+                h6 {
+                    font-weight: bold;
+                    font-size: small;
+                    margin-left: 60px;
+                    width: 200px;
+                    .nomber {
+                        color: #019877;
+                    }
+                }
+                .star {
+                    i {
+                        color: rgb(243, 243, 26);
+                        margin-left: 0.6rem;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .download-app {
+            font-weight: bold;
+            font-size: small;
+            text-align: left;
+            margin-left: -120px;
+            .downlo{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 360.98px) and (max-width: 400.98px) {
     #price {
@@ -283,11 +520,103 @@
         display: flex;
         position: relative;
         top: -50px;
-     }
-     .purchase {
-         position: relative;
-         top: 35px;
-     }
+    }
+    .purchase {
+        position: relative;
+        top: 35px;
+    }
+
+    #footer {
+        position: relative;
+        top: 30px;
+        .card {
+            background-color: #ecf3ff;
+
+            .row {
+                position: relative;
+                top: 10px;
+                display: flex;
+                .right-side {
+                    display: flex;
+                    justify-content: end;
+                }
+                .im1 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+                .im2 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 3px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            left: -80px;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            a {
+                background-color: #019877;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                width: 4rem;
+                margin-left: 4px;
+            }
+
+            h6 {
+                width: 15rem;
+            }
+            .content2 {
+                margin-left: 40px;
+                h6 {
+                    font-weight: bold;
+                    font-size: small;
+                    margin-left: 60px;
+                    width: 200px;
+                    .nomber {
+                        color: #019877;
+                    }
+                }
+                .star {
+                    i {
+                        color: rgb(243, 243, 26);
+                        margin-left: 0.6rem;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .download-app {
+            font-weight: bold;
+            font-size: small;
+            text-align: left;
+            margin-left: -120px;
+            .downlo{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 400px) and (max-width: 457.98px) {
     #price {
@@ -313,11 +642,102 @@
         display: flex;
         position: relative;
         top: -50px;
-     }
-     .purchase {
-         position: relative;
-         top: 35px;
-     }
+    }
+    .purchase {
+        position: relative;
+        top: 35px;
+    }
+    #footer {
+        position: relative;
+        top: 30px;
+        .card {
+            background-color: #ecf3ff;
+
+            .row {
+                position: relative;
+                top: 10px;
+                display: flex;
+                .right-side {
+                    display: flex;
+                    justify-content: end;
+                }
+                .im1 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+                .im2 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 3px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            left: -80px;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            a {
+                background-color: #019877;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                width: 4rem;
+                margin-left: 4px;
+            }
+
+            h6 {
+                width: 15rem;
+            }
+            .content2 {
+                margin-left: 40px;
+                h6 {
+                    font-weight: bold;
+                    font-size: small;
+                    margin-left: 60px;
+                    width: 300px;
+                    .nomber {
+                        color: #019877;
+                    }
+                }
+                .star {
+                    i {
+                        color: rgb(243, 243, 26);
+                        margin-left: 0.6rem;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .download-app {
+            font-weight: bold;
+            font-size: small;
+            text-align: left;
+            margin-left: -120px;
+            .downlo{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 457px) and (max-width: 1200px) {
     #price {
@@ -338,7 +758,103 @@
             border-radius: 2px;
         }
     }
-    
+}
+
+@media (min-width: 460px) and (max-width: 684px) {
+    #footer {
+        position: relative;
+        top: 30px;
+        .card {
+            background-color: #ecf3ff;
+
+            .row {
+                position: relative;
+                top: 10px;
+                display: flex;
+                .right-side {
+                    display: flex;
+                    justify-content: end;
+                }
+                .im1 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+                .im2 {
+                    width: 2rem;
+                    margin-left: 8px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            left: -80px;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            a {
+                background-color: #019877;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                width: 4rem;
+                margin-left: 4px;
+            }
+
+            h6 {
+                width: 15rem;
+            }
+            .content2 {
+                margin-left: 40px;
+                h6 {
+                    font-weight: bold;
+                    font-size: small;
+                    margin-left: 60px;
+                    width: 400px;
+                  
+                    .nomber {
+                        color: #019877;
+                        width: 100%;
+                        
+                    }
+                }
+                .star {
+                    i {
+                        color: rgb(243, 243, 26);
+                        margin-left: 0.6rem;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .download-app {
+            font-weight: bold;
+            font-size: small;
+            text-align: left;
+            margin-left: -120px;
+            .downlo{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 1200px) {
     #price {
@@ -359,7 +875,12 @@
             border-radius: 2px;
         }
     }
-    #footer{
+    #footer {
+        display: none;
+    }
+}
+@media (min-width: 862px) {
+    #footer {
         display: none;
     }
 }
