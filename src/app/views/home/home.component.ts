@@ -1,29 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
   // animation = 'headShake';
   // animationState = false;
   // animationWithState = false;
   // hueBtnState = false;
 
+  hasDisplayFooter = false;
 
   productQuantity = 1;
   productUnitPrice = 1200;
   productAmount = 1200.99;
   condition = true;
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  
-  }
+  ngOnInit(): void {}
   cputeProductAmount() {
     this.productQuantity = this.productQuantity + 1;
     this.productAmount = this.productQuantity * this.productUnitPrice;
@@ -50,8 +47,12 @@ export class HomeComponent implements OnInit {
   //   }, 1);
   // }
 
-
-  
-
-
+  @HostListener('window:scroll')
+  displayFooter() {
+    if (window.pageYOffset >= 300) {
+      this.hasDisplayFooter = true;
+    } else {
+      this.hasDisplayFooter = false;
+    }
+  }
 }
