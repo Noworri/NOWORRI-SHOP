@@ -418,7 +418,7 @@
                 </li>
 
 
-                <li class="list-group-item animate__animated animate__headShake animate__infinite animate__slow 2s ">
+                <li id='vid'  class="list-group-item animate__animated animate__headShake animate__infinite animate__slow 2s ">
                     <div class="card">
                         <div class="embed-responsive ">
                             <iframe width="100%" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" frameborder="0"
@@ -469,7 +469,7 @@
     </div>
 
 </div>
-<footer id="footer">
+<footer id="footer"  *ngIf="hasDisplayFooter" >
     <div class="card">
         <div class="card-header">
             <div class="container">
@@ -483,11 +483,11 @@
                         <div class="col-3 content2">
                             <h6>Used by <span class="nomber">1,253 merchands</span></h6>
                             <h6 class="star">
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </h6>
                         </div>
                     </div>
