@@ -80,11 +80,14 @@
         box-shadow: none;
         .card {
           max-width: 25rem !important;
-          border-radius: 6px;
+          border-radius: 10px;
           border-color: #343b76;
+          border-top-left-radius: 10px;
 
           img {
-            //    height: 20px;
+            border-radius: 6px;
+          
+              //  height: 300px;
           }
           .card-body {
             margin-top: -25px;
@@ -167,6 +170,7 @@
       font-weight: 600;
     }
   }
+
   .embed-responsive {
     margin-left: -1px;
     margin-top: -1px;
@@ -253,9 +257,29 @@
     font-weight: bold;
   }
 }
+#gene-footer{
+ 
+  footer {
+    margin-top: -60px;
+   
+    a {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 1em;
+      font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    strong{
+      margin-left: 5px;
+    }
+  }
+}
 
-#vid{
-    margin-bottom: 100px;
+
+#vid {
+  margin-bottom: 100px;
 }
 
 // responssive
@@ -863,15 +887,6 @@
         }
       }
     }
-    .download-app {
-      font-weight: bold;
-      font-size: small;
-      text-align: left;
-      margin-left: -120px;
-      .downlo {
-        display: none;
-      }
-    }
   }
 }
 @media (min-width: 1200px) {
@@ -893,12 +908,13 @@
       border-radius: 2px;
     }
   }
-  #footer {
-    display: none;
+}
+
+@media (max-width: 768px) {
+  #img{
+    height: 350px;
   }
 }
-@media (min-width: 862px) {
-  #footer {
-    display: none;
-  }
-}
+
+
+
