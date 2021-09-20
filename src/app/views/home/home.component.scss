@@ -911,6 +911,12 @@
 }
 
 @media (max-width: 768px) {
+  .card-title {
+    font-size: 17px !important;
+    margin-bottom: 10px;
+    
+  }
+
   #img{
     height: 350px;
   }
